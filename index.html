@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
     <title>The Big Red Barn - Saint Ignatius, MT</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.min.css">
@@ -16,9 +16,14 @@
             max-width: 20rem;
             margin: 1rem;
         }
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
         .carousel-inner {
-            max-height: 400px; /* Set your desired height */
-            
+            max-height: 400px;
+            /* Set your desired height */
+
         }
 
         .carousel-inner img {
@@ -30,49 +35,45 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <!-- svg from file -->
-            
-                
-            <a class="navbar-brand" href="#">Big Red Barn</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#events">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#history">History</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Big Red Barn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#history">History</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex">
                     <input class="form-control me-sm-2" type="search" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                </form> -->
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <div class="container mt-5">
+        </nav>
+    
+    <div class="container mt-5 mt-5">
         <div class="row">
             <div id="home" class="col-md-6">
                 <h2>Welcome to the Big Red Barn!</h2>
@@ -171,7 +172,7 @@
         <h2>Events</h2>
 
         <div class="row">
-            <div class="card mb-3" >
+            <div class="card mb-3">
                 <div class="card-header">Weddings</div>
                 <div class="card-body">
                     <h4 class="card-title">Weddings</h4>
@@ -247,82 +248,93 @@
                         class="btn btn-primary">Book Now</a>
                 </div>
             </div>
-        <div class="card mb-3">
-            <div class="card-header">Holiday Parties</div>
-            <div class="card-body">
-                <h4 class="card-title
+            <div class="card mb-3">
+                <div class="card-header">Holiday Parties</div>
+                <div class="card-body">
+                    <h4 class="card-title
                 ">Holiday Parties</h4>
-                <p class="card-text">Celebrate the festive season with a holiday party in our barn. The charming
-                    ambiance and spacious interior are perfect for hosting your holiday gatherings.</p>
+                    <p class="card-text">Celebrate the festive season with a holiday party in our barn. The charming
+                        ambiance and spacious interior are perfect for hosting your holiday gatherings.</p>
                     <a href="mailto:info@big-red-barn.com?subject=Concert/Performance Booking Inquiry&body=Please provide details of your event%0D%0A%0D%0AEvent Date:%0D%0A%0D%0AApproximate Number of Guests:%0D%0A%0D%0AAdditional Information:"
-                    class="btn btn-primary">Book Now</a>
+                        class="btn btn-primary">Book Now</a>
+                </div>
             </div>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">Something Entirely Different?</div>
-            <div class="card-body">
-                <h4 class="card-title
+            <div class="card mb-3">
+                <div class="card-header">Something Entirely Different?</div>
+                <div class="card-body">
+                    <h4 class="card-title
                 ">Your own idea!</h4>
-                <p class="card-text">Have a unique event in mind? We’re open to new ideas and creative concepts.</p>
+                    <p class="card-text">Have a unique event in mind? We’re open to new ideas and creative concepts.</p>
                     <a href="mailto:info@big-red-barn.com?subject=Other Booking Inquiry&body=Please provide details of your event.&body=Please provide details of your event%0D%0A%0D%0AEvent Date:%0D%0A%0D%0AApproximate Number of Guests:%0D%0A%0D%0AAdditional Information:"
-                    class="btn btn-primary">Book Now</a>
+                        class="btn btn-primary">Book Now</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="about" class="container mt-5">
-        <h2>About Us</h2>
-        <p>The Big Red Barn is located in Saint Ignatius, Montana, set against the picturesque backdrop of the Mission
-            Mountains. Originally built over 90 years ago, this historic barn was once used for cattle and theater
-            productions. The property is divided by Mission Creek, adding to its rustic charm and scenic beauty. This
-            unique venue offers a combination of history and natural beauty, making it an ideal location for various
-            events.</p>
-    </div>
+        <div id="about" class="container mt-5">
+            <h2>About Us</h2>
+            <p>The Big Red Barn is located in Saint Ignatius, Montana, set against the picturesque backdrop of the
+                Mission
+                Mountains. Originally built over 90 years ago, this historic barn was once used for cattle and theater
+                productions. The property is divided by Mission Creek, adding to its rustic charm and scenic beauty.
+                This
+                unique venue offers a combination of history and natural beauty, making it an ideal location for various
+                events.</p>
+        </div>
 
-    <div id="contact" class="container mt-5">
-        <h2>Contact</h2>
-        <p>For booking inquiries and more information, please contact us at:</p>
-        <p>Phone: 509-789-0235</p>
-        <p>Email: <a href="mailto:info@big-red-barn.com">info@big-red-barn.com</a></p>
-        <p>Location: 340 Mission Dr, Saint Ignatius, MT</p>
-    </div>
+        <div id="contact" class="container mt-5">
+            <h2>Contact</h2>
+            <p>For booking inquiries and more information, please contact us at:</p>
+            <p>Phone: 509-789-0235</p>
+            <p>Email: <a href="mailto:info@big-red-barn.com">info@big-red-barn.com</a></p>
+            <p>Location: 340 Mission Dr, Saint Ignatius, MT</p>
+        </div>
 
-    <div id="history" class="container mt-5">
-        <h2>History of the Big Red Barn</h2>
-        <p> 
+        <div id="history" class="container mt-5">
+            <h2>History of the Big Red Barn</h2>
+            <p>
 
-            The Big Red Barn, located across from the historic St. Ignatius Mission Church, has been a central part of the community since its construction in the 1930s. Initially built by Jesuits for their dairy operation, the barn later transitioned to cattle raising under the ownership of the Brown family.
-        </p>
-        <p>
-            In 1993, the Arlint family purchased the barn, utilizing it for livestock on the lower floor and hosting events on the upper floor. Rita Tingey, with her performing arts background, directed local theater productions and community events in the barn.
-        </p>
-        <p>
-            Due to severe roof leaks, the barn became largely unusable in recent years. However, in 2011, Rita Tingey began saving for a major renovation project. Over seven years, she raised $65,000 to finance the roof repairs, completed by Miller Construction.
-        </p>
-        <p> 
-            With the new roof in place, the barn is set to once again be a vibrant community hub. Plans include a haunted barn event, theater productions, and private event rentals. The community's positive response highlights the barn's enduring significance.
-        </p>
-        <p> 
-            Rita Tingey remains dedicated to restoring the barn as a vital resource for St. Ignatius, ensuring it continues to be a place for gatherings, performances, and celebrations.</p>
-    </div>
+                The Big Red Barn, located across from the historic St. Ignatius Mission Church, has been a central part
+                of the community since its construction in the 1930s. Initially built by Jesuits for their dairy
+                operation, the barn later transitioned to cattle raising under the ownership of the Brown family.
+            </p>
+            <p>
+                In 1993, the Arlint family purchased the barn, utilizing it for livestock on the lower floor and hosting
+                events on the upper floor. Rita Tingey, with her performing arts background, directed local theater
+                productions and community events in the barn.
+            </p>
+            <p>
+                Due to severe roof leaks, the barn became largely unusable in recent years. However, in 2011, Rita
+                Tingey began saving for a major renovation project. Over seven years, she raised $65,000 to finance the
+                roof repairs, completed by Miller Construction.
+            </p>
+            <p>
+                With the new roof in place, the barn is set to once again be a vibrant community hub. Plans include a
+                haunted barn event, theater productions, and private event rentals. The community's positive response
+                highlights the barn's enduring significance.
+            </p>
+            <p>
+                Rita Tingey remains dedicated to restoring the barn as a vital resource for St. Ignatius, ensuring it
+                continues to be a place for gatherings, performances, and celebrations.</p>
+        </div>
 
-    <footer class="container mt-5">
-        <p>&copy; 2024 The Big Red Barn - All Rights Reserved</p>
-    </footer>
+        <footer class="container mt-5">
+            <p>&copy; 2024 The Big Red Barn - All Rights Reserved</p>
+        </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
