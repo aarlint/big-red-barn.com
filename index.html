@@ -1,180 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Big Red Barn - Saint Ignatius, MT</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .card {
+            max-width: 20rem;
+            margin: 1rem;
+        }
+    </style>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Big Red Barn</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#home">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#events">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
+            <a class="navbar-brand" href="#">Big Red Barn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-<div class="container mt-5">
-    <div class="row">
-        <div id="home" class="col-md-6">
-            <h2>Welcome to the Big Red Barn!</h2>
-            <p>Nestled in the heart of Saint Ignatius, Montana, our big red barn is the perfect venue for your special events. With its rustic charm and spacious interior, it provides a unique and memorable setting for any occasion. Explore our range of events and see how we can make your next event unforgettable.</p>
-        </div>
-        <div id="gallery" class="col-md-6">
-            <h2>Gallery</h2>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <div class="container mt-5">
+        <div class="row">
+            <div id="home" class="col-md-6">
+                <h2>Welcome to the Big Red Barn!</h2>
+                <p>Nestled in the heart of Saint Ignatius, Montana, our big red barn is the perfect venue for your
+                    special events. With its rustic charm and spacious interior, it provides a unique and memorable
+                    setting for any occasion. Explore our range of events and see how we can make your next event
+                    unforgettable.</p>
+            </div>
+            <div id="gallery" class="col-md-6">
+                <h2>Gallery</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/1.jpg" alt="First slide">
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/4.jpg" alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/5.jpg" alt="Fifth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/6.jpg" alt="Sixth slide">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/3.jpg" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/4.jpg" alt="Fourth slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/5.jpg" alt="Fifth slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/6.jpg" alt="Sixth slide">
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
     </div>
-</div>
-<div id="reviews" class="container mt-5">
-    <h2>Reviews</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <figure>
-                <blockquote class="blockquote">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </figcaption>
-              </figure>
+    <div id="reviews" class="container mt-5">
+        <h2>Reviews</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                            ante.</p>
+
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                            ante.</p>
+
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                            ante.</p>
+
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="col-md-4">
-            <figure>
-                <blockquote class="blockquote">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </figcaption>
-              </figure>
+        <!-- Add more reviews here -->
+    </div>
+
+    <div id="events" class="container mt-5">
+        <h2>Events</h2>
+
+        <div class="row">
+            <div class="card mb-3" >
+                <div class="card-header">Weddings</div>
+                <div class="card-body">
+                    <h4 class="card-title">Weddings</h4>
+                    <p class="card-text">Celebrate your special day in the romantic ambiance of our big red barn. With
+                        picturesque surroundings and a cozy atmosphere, it’s the ideal setting for both ceremonies and
+                        receptions. Let us help you create the wedding of your dreams.</p>
+                    <a href="mailto:info@big-red-barn.com?subject=Wedding Booking Inquiry" class="btn btn-primary">Book
+                        Now</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Corporate Events</div>
+                <div class="card-body">
+                    <h4 class="card-title">Corporate Events</h4>
+                    <p class="card-text">Host your next corporate event in a distinctive venue that will impress your
+                        guests. Our barn is perfect for company retreats, team-building activities, and corporate
+                        parties. We offer flexible layouts and amenities to suit your needs.</p>
+                    <a href="mailto:info@big-red-barn.com?subject=Corporate Event Booking Inquiry"
+                        class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Birthday Parties</div>
+                <div class="card-body">
+                    <h4 class="card-title">Birthday Parties</h4>
+                    <p class="card-text">From children’s parties to milestone birthdays, our barn is a fantastic
+                        location for birthday celebrations. Enjoy the spacious grounds and charming interior for a fun
+                        and festive event.</p>
+                    <a href="mailto:info@big-red-barn.com?subject=Birthday Party Booking Inquiry"
+                        class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Anniversary Celebrations</div>
+                <div class="card-body">
+                    <h4 class="card-title">Anniversary Celebrations</h4>
+                    <p class="card-text">Mark your special milestones with an unforgettable anniversary celebration at
+                        our barn. With its intimate and warm setting, it’s perfect for celebrating your love and
+                        commitment.</p>
+                    <a href="mailto:info@big-red-barn.com?subject=Anniversary Celebration Booking Inquiry"
+                        class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Family Reunions</div>
+                <div class="card-body">
+                    <h4 class="card-title">Family Reunions</h4>
+                    <p class="card-text">Gather your family for a memorable reunion in our big red barn. The spacious
+                        venue and beautiful surroundings provide a perfect backdrop for reconnecting with loved ones.
+                    </p>
+                    <a href="mailto:info@big-red-barn.com?subject=Family Reunion Booking Inquiry"
+                        class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Workshops and Seminars</div>
+                <div class="card-body">
+                    <h4 class="card-title">Workshops and Seminars</h4>
+                    <p class="card-text">Offer your attendees a unique experience by hosting your workshop or seminar in
+                        our barn. The peaceful environment is ideal for learning and collaboration.</p>
+                    <a href="mailto:info@big-red-barn.com?subject=Workshop/Seminar Booking Inquiry"
+                        class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Concerts and Performances</div>
+                <div class="card-body">
+                    <h4 class="card-title">Concerts and Performances</h4>
+                    <p class="card-text">Enjoy live music and performances in a rustic setting. Our barn provides
+                        excellent acoustics and a cozy atmosphere for concerts and theater events.</p>
+                    <a href="mailto:info@big-red-barn.com?subject=Concert/Performance Booking Inquiry"
+                        class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        <div class="card mb-3">
+            <div class="card-header">Holiday Parties</div>
+            <div class="card-body">
+                <h4 class="card-title
+                ">Holiday Parties</h4>
+                <p class="card-text">Celebrate the festive season with a holiday party in our barn. The charming
+                    ambiance and spacious interior are perfect for hosting your holiday gatherings.</p>
+                    <a href="mailto:info@big-red-barn.com?subject=Concert/Performance Booking Inquiry"
+                    class="btn btn-primary">Book Now</a>
+            </div>
         </div>
-        <div class="col-md-4">
-            <figure>
-                <blockquote class="blockquote">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </figcaption>
-              </figure>
+        <div class="card mb-3">
+            <div class="card-header">Something Entirely Different?</div>
+            <div class="card-body">
+                <h4 class="card-title
+                ">Your own idea!</h4>
+                <p class="card-text">Have a unique event in mind? We’re open to new ideas and creative concepts.</p>
+                    <a href="mailto:info@big-red-barn.com?subject=Other Booking Inquiry&body=Please provide details of your event."
+                    class="btn btn-primary">Book Now</a>
+            </div>
         </div>
     </div>
-    <!-- Add more reviews here -->
-</div>
 
-<div id="events" class="container mt-5">
-    <h2>Events</h2>
-    <div>
-        <h3>Weddings</h3>
-        <p>Celebrate your special day in the romantic ambiance of our big red barn. With picturesque surroundings and a cozy atmosphere, it’s the ideal setting for both ceremonies and receptions. Let us help you create the wedding of your dreams.</p>
+    <div id="about" class="container mt-5">
+        <h2>About Us</h2>
+        <p>The Big Red Barn is located in Saint Ignatius, Montana, set against the picturesque backdrop of the Mission
+            Mountains. Originally built over 90 years ago, this historic barn was once used for cattle and theater
+            productions. The property is divided by Mission Creek, adding to its rustic charm and scenic beauty. This
+            unique venue offers a combination of history and natural beauty, making it an ideal location for various
+            events.</p>
     </div>
-    <div>
-        <h3>Corporate Events</h3>
-        <p>Host your next corporate event in a distinctive venue that will impress your guests. Our barn is perfect for company retreats, team-building activities, and corporate parties. We offer flexible layouts and amenities to suit your needs.</p>
+
+    <div id="contact" class="container mt-5">
+        <h2>Contact</h2>
+        <p>For booking inquiries and more information, please contact us at:</p>
+        <p>Phone: 509-789-0235</p>
+        <p>Email: <a href="mailto:info@big-red-barn.com">info@big-red-barn.com</a></p>
+        <p>Location: 340 Mission Dr, Saint Ignatius, MT</p>
     </div>
-    <!-- Add more event descriptions here -->
-</div>
 
-<div id="about" class="container mt-5">
-    <h2>About Us</h2>
-    <p>The Big Red Barn is located in Saint Ignatius, Montana, set against the picturesque backdrop of the Mission Mountains. Originally built over 90 years ago, this historic barn was once used for cattle and theater productions. The property is divided by Mission Creek, adding to its rustic charm and scenic beauty. This unique venue offers a combination of history and natural beauty, making it an ideal location for various events.</p>
-</div>
+    <footer class="container mt-5">
+        <p>&copy; 2024 The Big Red Barn - All Rights Reserved</p>
+    </footer>
 
-<div id="contact" class="container mt-5">
-    <h2>Contact</h2>
-    <p>For booking inquiries and more information, please contact us at:</p>
-    <p>Phone: 509-789-0235</p>
-    <p>Email: <a href="mailto:info@big-red-barn.com">info@big-red-barn.com</a></p>
-    <p>Location: 340 Mission Dr, Saint Ignatius, MT</p>
-</div>
-
-<footer class="container mt-5">
-    <p>&copy; 2024 The Big Red Barn - All Rights Reserved</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
+
 </html>
