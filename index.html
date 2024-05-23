@@ -20,6 +20,9 @@
             background-color: #f8f9fa;
             padding-top: 50px;
         }
+        .modal-dialog-lg {
+            padding: 30px;
+        }
         .carousel-inner {
             max-height: 400px;
             /* Set your desired height */
@@ -179,10 +182,30 @@
                         picturesque surroundings and a cozy atmosphere, it’s the ideal setting for both ceremonies and
                         receptions. Let us help you create the wedding of your dreams.</p>
                     <a href="mailto:info@big-red-barn.com?subject=Wedding Booking Inquiry&body=Please provide details of your event%0D%0A%0D%0AEvent Date:%0D%0A%0D%0AApproximate Number of Guests:%0D%0A%0D%0AAdditional Information:"
-                        class="btn btn-primary">Book Now</a>
-
+                        class="btn btn-primary">Book Now</a> 
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-wedding">
+                        Learn More
+                    </button>
                 </div>
             </div>
+            <div class="modal" id="modal-wedding" >
+                <div class="modal-dialog-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Weddings</h5>
+                      <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <div class="card mb-3">
                 <div class="card-header">Corporate Events</div>
                 <div class="card-body">
