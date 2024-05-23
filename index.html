@@ -329,6 +329,7 @@
 <script>
     
 
+    $(document).ready(function() {
         // Smooth scroll for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -338,6 +339,16 @@
                 });
             });
         });
+
+        // Click away functionality to close the collapse menu
+        $(document).click(function(event) {
+            var clickover = $(event.target);
+            var _opened = $("#navbarColor01").hasClass("show");
+            if (_opened && !clickover.closest('.navbar').length) {
+                $("#navbarColor01").collapse('hide');
+            }
+        });
+    });
 
 </script>
 
