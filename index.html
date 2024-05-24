@@ -11,7 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/png" href="icons/barn.png"> <!-- Add this line for your favicon -->
+    <link rel="icon" type="image/png" href="icons/barnSmall.png"> <!-- Add this line for your favicon -->
     <style>
         .card {
             max-width: 20rem;
@@ -38,13 +38,20 @@
             /* width: auto; */
             object-fit: cover;
         }
+        .lazy {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .lazy-loaded {
+            opacity: 1;
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand" href="#"> <img src="icons/barn.png" alt="Big Red Barn"  height="20"
+            <a class="navbar-brand" href="#"> <img src="icons/barnSmall.png" alt="Big Red Barn"  height="20"
                     class="d-inline-block align-text-top"> The Big Red Barn</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,22 +109,22 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/1.jpeg" alt="First slide">
+                            <img class=lazy class="d-block w-100" src=/images/placeholder.jpeg data-src="images/1.jpeg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/2.jpeg" alt="Second slide">
+                            <img class=lazy class="d-block w-100" src=/images/placeholder.jpeg data-src="images/2.jpeg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/3.jpeg" alt="Third slide">
+                            <img class=lazy class="d-block w-100" src=/images/placeholder.jpeg data-src="images/3.jpeg" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/4.jpeg" alt="Fourth slide">
+                            <img class=lazy class="d-block w-100" src=/images/placeholder.jpeg data-src="images/4.jpeg" alt="Fourth slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/5.jpeg" alt="Fifth slide">
+                            <img class=lazy class="d-block w-100" src=/images/placeholder.jpeg data-src="images/5.jpeg" alt="Fifth slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/6.jpeg" alt="Sixth slide">
+                            <img class=lazy class="d-block w-100" src=/images/placeholder.jpeg data-src="images/6.jpeg" alt="Sixth slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -210,7 +217,7 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="images/wedding/yard.jpg" class="img-fluid" alt="Wedding">
+                                    <img class=lazy src=/images/placeholder.jpeg data-src="images/wedding/yard.jpg" class="img-fluid" alt="Wedding">
                                 </div>
                                 <div class="col-md-6">
                                     <p>Our barn is the perfect venue for your dream wedding. With its rustic charm and
@@ -451,7 +458,44 @@
             crossorigin="anonymous"></script>
 
         <script>
-
+                    document.addEventListener("DOMContentLoaded", function() {
+            var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove("lazy");
+                            lazyImage.classList.add("lazy-loaded");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            } else {
+                // Fallback for browsers that don't support IntersectionObserver
+                let lazyLoad = function() {
+                    lazyImages.forEach(function(lazyImage) {
+                        if (lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0 && getComputedStyle(lazyImage).display !== "none") {
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove("lazy");
+                            lazyImage.classList.add("lazy-loaded");
+                        }
+                    });
+                    if (lazyImages.length === 0) {
+                        document.removeEventListener("scroll", lazyLoad);
+                        window.removeEventListener("resize", lazyLoad);
+                        window.removeEventListener("orientationchange", lazyLoad);
+                    }
+                };
+                document.addEventListener("scroll", lazyLoad);
+                window.addEventListener("resize", lazyLoad);
+                window.addEventListener("orientationchange", lazyLoad);
+            }
+        });
 
             $(document).ready(function () {
                 // Smooth scroll for navigation links
