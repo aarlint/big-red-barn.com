@@ -31,46 +31,46 @@ const History = () => {
   // Historical milestones
   const milestones = [
     {
-      year: '1910',
+      year: '1930s',
       title: 'Original Construction',
-      description: 'The Big Red Barn was originally built as part of the Johnson Family Ranch, one of the largest cattle operations in the Saint Ignatius area at the time.'
+      description: 'The Big Red Barn was built by Jesuits for their dairy operation, located across from the historic St. Ignatius Mission Church. It quickly became a central part of the community.'
     },
     {
-      year: '1945',
-      title: 'Expansion & Renovation',
-      description: 'After World War II, the barn was expanded to accommodate the growing ranch operations, adding the distinctive cupola that remains a landmark feature today.'
+      year: '1940s-80s',
+      title: 'Brown Family Ownership',
+      description: 'The barn transitioned to cattle raising under the ownership of the Brown family, continuing its agricultural legacy in the Mission Valley.'
     },
     {
-      year: '1978',
-      title: 'Historic Designation',
-      description: 'The barn was recognized for its historical significance and added to the Montana Register of Historic Places, ensuring its preservation for future generations.'
+      year: '1993',
+      title: 'Arlint Family Purchase',
+      description: 'The Arlint family purchased the barn, utilizing the lower floor for livestock and the upper floor for hosting community events and gatherings.'
     },
     {
-      year: '2005',
-      title: 'Conversion to Event Venue',
-      description: 'The Johnson family converted the barn into an event venue, carefully preserving its historic character while adding modern amenities for comfort and convenience.'
+      year: '1990s-2000s',
+      title: 'Theater & Community Hub',
+      description: 'Rita Tingey, with her performing arts background, directed local theater productions and community events in the barn, establishing it as a cultural center for St. Ignatius.'
     },
     {
-      year: '2018',
-      title: 'Major Restoration',
-      description: 'A comprehensive restoration project was undertaken to reinforce the structure, update facilities, and enhance the grounds while maintaining the barn\'s authentic rustic charm.'
+      year: 'Recent Years',
+      title: 'Renovation & Restoration',
+      description: 'A new roof was installed as part of ongoing restoration efforts to preserve this historic structure for future generations.'
     },
     {
       year: 'Today',
       title: 'Continuing Legacy',
-      description: 'The Big Red Barn continues to be a beloved venue for weddings, events, and gatherings, sharing its rich history and unique character with new generations.'
+      description: 'The barn is once again a vibrant community hub, hosting events like haunted barn attractions, theater productions, and private event rentals while maintaining its historical significance.'
     }
   ];
   
   // Historical facts
   const historicalFacts = [
-    'The original timber used in construction was sourced from the nearby Mission Mountains.',
-    'The distinctive red color comes from a traditional milk paint recipe that has been maintained through the years.',
-    'During Prohibition, the barn\'s hayloft was rumored to have been used for secret gatherings and celebrations.',
-    'The weathervane on top of the cupola is original to the 1945 renovation.',
-    'Famous Montana artist Charles M. Russell is said to have visited the barn in the 1920s and sketched it in his notebook.',
-    'The barn survived a major fire in 1963 that destroyed several other buildings on the property.',
-    'Some of the original stalls and feeding troughs have been preserved and incorporated into the venue\'s rustic decor.'
+    'The barn is located across from the historic St. Ignatius Mission Church, creating a significant historical landmark pairing.',
+    'The property is divided by Mission Creek, adding to its rustic charm and scenic beauty.',
+    'The barn has a unique two-story structure, with the lower level originally used for livestock and the upper level for events.',
+    'Local theater productions were regularly performed in the barn, making it a cultural center for the community.',
+    'Rita Tingey has been instrumental in preserving the barn as a vital resource for the St. Ignatius community.',
+    'The barn has been standing for over 90 years and continues to be an important part of the local heritage.',
+    'The recent roof renovation has ensured the barn will continue to serve the community for many more years.'
   ];
   
   return (
@@ -112,23 +112,23 @@ const History = () => {
                   fontFamily="heading"
                   color={headingColor}
                 >
-                  A Century of Stories
+                  Over 90 Years of History
                 </Heading>
                 
                 <Text fontSize="lg">
-                  Standing proudly against the backdrop of the Mission Mountains for over a century, the Big Red Barn has been a silent witness to the changing landscape of Montana and the lives of those who have called this beautiful region home.
+                  Standing proudly across from the historic St. Ignatius Mission Church for over 90 years, the Big Red Barn has been a silent witness to the changing landscape of Montana and the lives of those who have called this beautiful region home.
                 </Text>
                 
                 <Text fontSize="lg">
-                  Originally built in 1910 as part of the Johnson Family Ranch, the barn served as the heart of one of the area's largest cattle operations. Its sturdy timber frame and distinctive red exterior have become an iconic landmark in the Saint Ignatius valley.
+                  Originally built in the 1930s by Jesuits for their dairy operation, the barn later transitioned to cattle raising under the Brown family. In 1993, the Arlint family purchased this historic structure, utilizing the lower floor for livestock and the upper floor for hosting community events.
                 </Text>
                 
                 <Text fontSize="lg">
-                  Through the years, the barn has adapted to changing times while maintaining its historic character. From housing livestock and storing hay to sheltering equipment and eventually welcoming guests for special events, the Big Red Barn has always been a place where memories are made.
+                  Rita Tingey, with her performing arts background, brought new life to the barn by directing local theater productions and community events, establishing it as a cultural center for St. Ignatius. The property, divided by Mission Creek, offers a unique blend of history and natural beauty.
                 </Text>
                 
                 <Text fontSize="lg">
-                  Today, we are proud to continue the legacy of this historic structure by sharing it with couples, families, and organizations looking for a venue with authentic character and a story to tell.
+                  Today, with a new roof in place, the barn is once again a vibrant community hub. Plans include haunted barn events, theater productions, and private event rentals. Rita Tingey remains dedicated to restoring the barn as a vital resource for St. Ignatius, ensuring it continues to be a place for gatherings, performances, and celebrations.
                 </Text>
               </VStack>
             </AnimatedSection>
@@ -331,19 +331,19 @@ const History = () => {
                   color={headingColor}
                   mb={6}
                 >
-                  Preservation Efforts
+                  Restoration & Future Vision
                 </Heading>
                 
                 <Text fontSize="lg" mb={4}>
-                  Preserving the historical integrity of the Big Red Barn is a labor of love and commitment. Our ongoing preservation efforts ensure that this piece of Montana's agricultural heritage will continue to stand for generations to come.
+                  The recent installation of a new roof marks a significant milestone in our ongoing efforts to preserve and restore the Big Red Barn. This essential improvement ensures that this piece of Montana's agricultural and cultural heritage will continue to stand for generations to come.
                 </Text>
                 
                 <Text fontSize="lg" mb={4}>
-                  We work with historical preservation experts to maintain the original features of the barn while making necessary updates for safety and comfort. From the hand-hewn beams to the authentic hardware, we strive to honor the craftsmanship of those who built this remarkable structure.
+                  Under the dedicated leadership of Rita Tingey, the barn is being revitalized as a vital community resource. The restoration balances necessary updates for safety and comfort while honoring the historical significance and original character of this remarkable structure.
                 </Text>
                 
                 <Text fontSize="lg">
-                  When you visit the Big Red Barn, you're not just experiencing a venue – you're stepping into a living piece of history that continues to evolve while respecting its roots.
+                  The community's positive response to these restoration efforts highlights the barn's enduring significance to St. Ignatius. When you visit the Big Red Barn, you're not just experiencing a venue – you're participating in the continuing story of a cherished local landmark.
                 </Text>
               </Box>
               

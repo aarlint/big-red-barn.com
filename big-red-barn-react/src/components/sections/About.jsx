@@ -31,37 +31,37 @@ const About = () => {
     {
       icon: FaMountain,
       title: 'Scenic Location',
-      description: 'Nestled against the backdrop of the Mission Mountains, offering breathtaking views.'
+      description: 'Set against the picturesque backdrop of the Mission Mountains, across from the historic St. Ignatius Mission Church.'
     },
     {
       icon: FaTree,
-      title: 'Spacious Grounds',
-      description: 'Over 5 acres of beautifully maintained grounds for outdoor ceremonies and activities.'
+      title: 'Natural Beauty',
+      description: 'The property is divided by Mission Creek, adding to its rustic charm and scenic beauty.'
     },
     {
       icon: FaHome,
-      title: 'Rustic Charm',
-      description: 'Authentic barn architecture with modern amenities for comfort and convenience.'
+      title: 'Historic Structure',
+      description: 'A 90+ year old barn with authentic architecture that has been part of the community since the 1930s.'
     },
     {
       icon: FaHistory,
-      title: 'Rich History',
-      description: 'A historic venue with stories dating back to the early 1900s, adding character to your event.'
+      title: 'Cultural Heritage',
+      description: 'Once used for dairy operations by Jesuits and later for theater productions and community events.'
     }
   ];
   
   // Amenities
   const amenities = [
-    'Seating for up to 200 guests',
-    'Climate-controlled interior',
-    'Professional sound system',
-    'Catering kitchen',
-    'Bridal suite and groom\'s quarters',
-    'Ample parking',
-    'Outdoor ceremony space',
-    'Tables and chairs included',
-    'Rustic decor elements available',
-    'On-site event coordinator'
+    'Unique two-story barn structure',
+    'Upper floor for events and gatherings',
+    'Spacious interior for various event types',
+    'Historic setting with authentic character',
+    'Beautiful outdoor areas with Mission Creek',
+    'Scenic views of the Mission Mountains',
+    'Located across from the historic St. Ignatius Mission Church',
+    'Versatile space for weddings, theater productions, and community events',
+    'Rustic charm with recent roof renovation',
+    'Convenient location in Saint Ignatius, Montana'
   ];
   
   return (
@@ -105,15 +105,15 @@ const About = () => {
               </Heading>
               
               <Text fontSize="lg" mb={4}>
-                The Big Red Barn has been a landmark in Saint Ignatius for over a century. Originally built in 1910 as a working barn for one of the area's largest cattle ranches, it has been lovingly restored and transformed into a premier event venue while preserving its historic charm and character.
+                The Big Red Barn is located in Saint Ignatius, Montana, set against the picturesque backdrop of the Mission Mountains. Originally built over 90 years ago, this historic barn was once used for cattle and theater productions.
               </Text>
               
               <Text fontSize="lg" mb={4}>
-                Our mission is to provide a unique, rustic, and memorable setting for life's special moments. Whether you're celebrating a wedding, hosting a corporate retreat, or gathering for a family reunion, our venue offers the perfect blend of Montana's natural beauty and historic architecture.
+                The property is divided by Mission Creek, adding to its rustic charm and scenic beauty. This unique venue offers a combination of history and natural beauty, making it an ideal location for various events.
               </Text>
               
               <Text fontSize="lg">
-                Today, the Big Red Barn is owned and operated by the Johnson family, who have deep roots in the Saint Ignatius community and are dedicated to sharing this special place with guests from near and far.
+                Whether you're celebrating a wedding, hosting a corporate retreat, or gathering for a family reunion, our venue provides a perfect blend of Montana's natural splendor and historic architecture that will make your event truly memorable.
               </Text>
             </Box>
           </AnimatedSection>
@@ -193,7 +193,7 @@ const About = () => {
                 fontFamily="heading"
                 mb={6}
               >
-                Amenities & Services
+                Venue Features
               </Heading>
               
               <List spacing={3}>
