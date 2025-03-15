@@ -21,8 +21,8 @@ const MotionBox = motion(Box);
 const Hero = () => {
   // Colors
   const bgOverlayColor = useColorModeValue(
-    'rgba(0, 0, 0, 0.4)',
-    'rgba(0, 0, 0, 0.6)'
+    'rgba(0, 0, 0, 0.3)',
+    'rgba(0, 0, 0, 0.5)'
   );
   const textColor = 'cream.600';
   const buttonBgColor = useColorModeValue('gold.600', 'gold.500');
@@ -76,7 +76,8 @@ const Hero = () => {
         bgPosition="center"
         bgSize="cover"
         bgRepeat="no-repeat"
-        zIndex={-2}
+        zIndex={0}
+        transition="opacity 0.5s ease-in-out"
       />
       
       {/* Dark Overlay */}
@@ -87,15 +88,16 @@ const Hero = () => {
         right={0}
         bottom={0}
         bg={bgOverlayColor}
-        zIndex={-1}
+        zIndex={1}
+        transition="background-color 0.5s ease-in-out"
       />
       
       {/* Content */}
-      <Container 
-        maxW="container.xl" 
-        height="100%" 
+      <Container
+        maxW="container.xl"
+        height="100%"
         position="relative"
-        zIndex={1}
+        zIndex={2}
       >
         <Flex
           direction="column"
@@ -217,7 +219,7 @@ const Hero = () => {
         bottom="30px"
         left="50%"
         transform="translateX(-50%)"
-        zIndex={1}
+        zIndex={2}
       >
         <MotionBox
           animate={{ 
