@@ -339,7 +339,7 @@ const History = () => {
                 </Text>
                 
                 <Text fontSize="lg" mb={4}>
-                  Under the dedicated leadership of Rita Tingey, the barn is being revitalized as a vital community resource. The restoration balances necessary updates for safety and comfort while honoring the historical significance and original character of this remarkable structure.
+                  With the hard work of Scott and Rita Tingey, the barn is being revitalized as a vital community resource. The restoration balances necessary updates for safety and comfort while honoring the historical significance and original character of this remarkable structure.
                 </Text>
                 
                 <Text fontSize="lg">
