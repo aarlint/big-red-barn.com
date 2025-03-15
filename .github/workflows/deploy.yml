@@ -39,24 +39,13 @@ jobs:
       - name: Copy CNAME file
         run: cp CNAME big-red-barn-react/dist/
       
-      - name: Clean up repository
-        run: |
-          # Create a clean directory with only the necessary files
-          mkdir -p clean-repo
-          cp -r big-red-barn-react/dist/* clean-repo/
-          cp CNAME clean-repo/
-          cp README.md clean-repo/
-          
-          # Remove unnecessary files from the base directory
-          # This doesn't affect the local repository, only the deployed site
-      
       - name: Setup Pages
         uses: actions/configure-pages@v3
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: 'clean-repo'
+          path: 'big-red-barn-react/dist'
 
   deploy:
     environment:
@@ -67,4 +56,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v1

@@ -34,6 +34,23 @@ This repository includes a CNAME file for custom domain configuration. If you wa
 1. Update the CNAME file with your domain
 2. Configure your domain's DNS settings to point to GitHub Pages
 
+## Cleaning Up Unnecessary Files
+
+This repository includes a cleanup script to remove unnecessary files from the base directory:
+
+```bash
+# Make the script executable
+chmod +x cleanup.sh
+
+# Run the cleanup script
+./cleanup.sh
+```
+
+This will remove:
+- Old HTML files (index.html, history.html)
+- CSS files (bootstrap.min.css)
+- Duplicate asset directories (icons/, images/)
+
 ## Local Development
 
 To run the project locally:
