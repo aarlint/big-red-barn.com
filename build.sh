@@ -27,7 +27,7 @@ cd ..
 
 # Remove old files from root (except for specific directories/files)
 echo "🧹 Cleaning up root directory..."
-find . -maxdepth 1 -type f -not -name "README.md" -not -name "CNAME" -not -name "build.sh" -not -name ".gitignore" -delete
+find . -maxdepth 1 -type f -not -name "README.md" -not -name "CNAME" -not -name "build.sh" -not -name ".gitignore"  -not -name ".nojekyll" -delete
 find . -maxdepth 1 -type d -not -path "./big-red-barn-react" -not -path "." -not -path "./.git" -not -path "./.github" -exec rm -rf {} \;
 
 # Copy build files to root (includes processed public files)
