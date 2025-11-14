@@ -25,60 +25,186 @@ const Gallery = () => {
   // Modal state
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedImage, setSelectedImage] = useState(0);
-  
+
   // Colors
   const bgColor = useColorModeValue('cream.100', 'charcoal.800');
   const textColor = useColorModeValue('charcoal.800', 'cream.500');
   const headingColor = useColorModeValue('forest.600', 'gold.500');
   
-  // Gallery images
+  // Gallery images with optimized versions
   const galleryImages = [
     {
-      src: '/images/large/1.jpg',
-      alt: 'Big Red Barn exterior view',
-      caption: 'The iconic red barn exterior'
+      thumbnail: '/images/thumbnails/1-DSC_8126.jpg',
+      medium: '/images/medium/1-DSC_8126.jpg',
+      large: '/images/large/1-DSC_8126.jpg',
+      alt: 'Big Red Barn gallery image 1'
     },
     {
-      src: '/images/large/2.jpg',
-      alt: 'Big Red Barn with white fence',
-      caption: 'Rustic charm with white fence'
+      thumbnail: '/images/thumbnails/2-DSC_8165.jpg',
+      medium: '/images/medium/2-DSC_8165.jpg',
+      large: '/images/large/2-DSC_8165.jpg',
+      alt: 'Big Red Barn gallery image 2'
     },
     {
-      src: '/images/large/3.jpg',
-      alt: 'Big Red Barn side view',
-      caption: 'Side view of the barn'
+      thumbnail: '/images/thumbnails/3-DSC_8176.jpg',
+      medium: '/images/medium/3-DSC_8176.jpg',
+      large: '/images/large/3-DSC_8176.jpg',
+      alt: 'Big Red Barn gallery image 3'
     },
     {
-      src: '/images/large/4.jpg',
-      alt: 'Interior of the barn set up for an event',
-      caption: 'Interior setup for events'
+      thumbnail: '/images/thumbnails/4-DSC_8191.jpg',
+      medium: '/images/medium/4-DSC_8191.jpg',
+      large: '/images/large/4-DSC_8191.jpg',
+      alt: 'Big Red Barn gallery image 4'
     },
     {
-      src: '/images/large/5.jpg',
-      alt: 'Evening event at the barn',
-      caption: 'Evening events with beautiful lighting'
+      thumbnail: '/images/thumbnails/5-DSC_8213.jpg',
+      medium: '/images/medium/5-DSC_8213.jpg',
+      large: '/images/large/5-DSC_8213.jpg',
+      alt: 'Big Red Barn gallery image 5'
     },
     {
-      src: '/images/large/6.jpg',
-      alt: 'Outdoor area of the barn',
-      caption: 'Outdoor space for gatherings'
+      thumbnail: '/images/thumbnails/6-DSC_8219.jpg',
+      medium: '/images/medium/6-DSC_8219.jpg',
+      large: '/images/large/6-DSC_8219.jpg',
+      alt: 'Big Red Barn gallery image 6'
+    },
+    {
+      thumbnail: '/images/thumbnails/7-DSC_8255.jpg',
+      medium: '/images/medium/7-DSC_8255.jpg',
+      large: '/images/large/7-DSC_8255.jpg',
+      alt: 'Big Red Barn gallery image 7'
+    },
+    {
+      thumbnail: '/images/thumbnails/8-DSC_8263.jpg',
+      medium: '/images/medium/8-DSC_8263.jpg',
+      large: '/images/large/8-DSC_8263.jpg',
+      alt: 'Big Red Barn gallery image 8'
+    },
+    {
+      thumbnail: '/images/thumbnails/9-DSC_8291.jpg',
+      medium: '/images/medium/9-DSC_8291.jpg',
+      large: '/images/large/9-DSC_8291.jpg',
+      alt: 'Big Red Barn gallery image 9'
+    },
+    {
+      thumbnail: '/images/thumbnails/10-DSC_8324.jpg',
+      medium: '/images/medium/10-DSC_8324.jpg',
+      large: '/images/large/10-DSC_8324.jpg',
+      alt: 'Big Red Barn gallery image 10'
+    },
+    {
+      thumbnail: '/images/thumbnails/11-DSC_8329.jpg',
+      medium: '/images/medium/11-DSC_8329.jpg',
+      large: '/images/large/11-DSC_8329.jpg',
+      alt: 'Big Red Barn gallery image 11'
+    },
+    {
+      thumbnail: '/images/thumbnails/12-DSC_8341.jpg',
+      medium: '/images/medium/12-DSC_8341.jpg',
+      large: '/images/large/12-DSC_8341.jpg',
+      alt: 'Big Red Barn gallery image 12'
+    },
+    {
+      thumbnail: '/images/thumbnails/13-DSC_8350.jpg',
+      medium: '/images/medium/13-DSC_8350.jpg',
+      large: '/images/large/13-DSC_8350.jpg',
+      alt: 'Big Red Barn gallery image 13'
+    },
+    {
+      thumbnail: '/images/thumbnails/14-DSC_8375.jpg',
+      medium: '/images/medium/14-DSC_8375.jpg',
+      large: '/images/large/14-DSC_8375.jpg',
+      alt: 'Big Red Barn gallery image 14'
+    },
+    {
+      thumbnail: '/images/thumbnails/15-DSC_8414.jpg',
+      medium: '/images/medium/15-DSC_8414.jpg',
+      large: '/images/large/15-DSC_8414.jpg',
+      alt: 'Big Red Barn gallery image 15'
+    },
+    {
+      thumbnail: '/images/thumbnails/16-DSC_8419.jpg',
+      medium: '/images/medium/16-DSC_8419.jpg',
+      large: '/images/large/16-DSC_8419.jpg',
+      alt: 'Big Red Barn gallery image 16'
+    },
+    {
+      thumbnail: '/images/thumbnails/17-DSC_8422.jpg',
+      medium: '/images/medium/17-DSC_8422.jpg',
+      large: '/images/large/17-DSC_8422.jpg',
+      alt: 'Big Red Barn gallery image 17'
+    },
+    {
+      thumbnail: '/images/thumbnails/18-DSC_8434.jpg',
+      medium: '/images/medium/18-DSC_8434.jpg',
+      large: '/images/large/18-DSC_8434.jpg',
+      alt: 'Big Red Barn gallery image 18'
+    },
+    {
+      thumbnail: '/images/thumbnails/19-DSC_8437.jpg',
+      medium: '/images/medium/19-DSC_8437.jpg',
+      large: '/images/large/19-DSC_8437.jpg',
+      alt: 'Big Red Barn gallery image 19'
+    },
+    {
+      thumbnail: '/images/thumbnails/20-DSC_8450.jpg',
+      medium: '/images/medium/20-DSC_8450.jpg',
+      large: '/images/large/20-DSC_8450.jpg',
+      alt: 'Big Red Barn gallery image 20'
+    },
+    {
+      thumbnail: '/images/thumbnails/21-DSC_8476.jpg',
+      medium: '/images/medium/21-DSC_8476.jpg',
+      large: '/images/large/21-DSC_8476.jpg',
+      alt: 'Big Red Barn gallery image 21'
+    },
+    {
+      thumbnail: '/images/thumbnails/22-DSC_8504.jpg',
+      medium: '/images/medium/22-DSC_8504.jpg',
+      large: '/images/large/22-DSC_8504.jpg',
+      alt: 'Big Red Barn gallery image 22'
+    },
+    {
+      thumbnail: '/images/thumbnails/23-DSC_8512.jpg',
+      medium: '/images/medium/23-DSC_8512.jpg',
+      large: '/images/large/23-DSC_8512.jpg',
+      alt: 'Big Red Barn gallery image 23'
+    },
+    {
+      thumbnail: '/images/thumbnails/24-DSC_8573.jpg',
+      medium: '/images/medium/24-DSC_8573.jpg',
+      large: '/images/large/24-DSC_8573.jpg',
+      alt: 'Big Red Barn gallery image 24'
+    },
+    {
+      thumbnail: '/images/thumbnails/25-DSC_8578.jpg',
+      medium: '/images/medium/25-DSC_8578.jpg',
+      large: '/images/large/25-DSC_8578.jpg',
+      alt: 'Big Red Barn gallery image 25'
+    },
+    {
+      thumbnail: '/images/thumbnails/26-barn-interior.jpg',
+      medium: '/images/medium/26-barn-interior.jpg',
+      large: '/images/large/26-barn-interior.jpg',
+      alt: 'Big Red Barn interior view'
     }
   ];
-  
+
   // Open image in modal
   const openImage = (index) => {
     setSelectedImage(index);
     onOpen();
   };
-  
+
   // Navigate to next/previous image in modal
   const navigateImage = (direction) => {
     if (direction === 'next') {
-      setSelectedImage((prev) => 
+      setSelectedImage((prev) =>
         prev === galleryImages.length - 1 ? 0 : prev + 1
       );
     } else {
-      setSelectedImage((prev) => 
+      setSelectedImage((prev) =>
         prev === 0 ? galleryImages.length - 1 : prev - 1
       );
     }
@@ -87,19 +213,19 @@ const Gallery = () => {
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { 
+    visible: {
       opacity: 1,
-      transition: { 
+      transition: {
         staggerChildren: 0.1,
         delayChildren: 0.3
       }
     }
   };
-  
+
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.5 }
     }
@@ -154,11 +280,12 @@ const Gallery = () => {
                   _hover={{ transform: 'scale(1.03)' }}
                 >
                   <Image
-                    src={image.src}
+                    src={image.thumbnail}
                     alt={image.alt}
                     width="100%"
                     height="250px"
                     objectFit="cover"
+                    loading="lazy"
                   />
                 </MotionBox>
               ))}
@@ -182,25 +309,12 @@ const Gallery = () => {
                   position="relative"
                 >
                   <Image
-                    src={galleryImages[selectedImage].src}
+                    src={galleryImages[selectedImage].medium}
                     alt={galleryImages[selectedImage].alt}
                     width="100%"
                     maxH="80vh"
                     objectFit="contain"
                   />
-                  <Box
-                    position="absolute"
-                    bottom={0}
-                    left={0}
-                    right={0}
-                    bg="blackAlpha.700"
-                    p={4}
-                    color="white"
-                  >
-                    <Text fontSize="lg" fontWeight="medium">
-                      {galleryImages[selectedImage].caption}
-                    </Text>
-                  </Box>
                 </MotionBox>
               </AnimatePresence>
               
